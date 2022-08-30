@@ -1,0 +1,6 @@
+f = str(input('Type any phrase: ').strip().lower())
+#qtn = f.count('a')
+#print(f'The letter "a" appears {qtn} times in this phrase.')
+print('The letter "a" appears {} times in this phrase.'.format(f.count('a')))
+print('The first letter "a" appears in position {} in this phrase.'.format(f.find('a')+1))
+print('The last time the letter "a" appears is in position {}.'.format(f.rfind('a')+1))
