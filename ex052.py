@@ -1,9 +1,14 @@
 n = int(input('Please, type any number: '))
-count = 0
-plus = 0
+qty = 0
 for c in range(1, n+1):
-    count += 1
-    if c % count == 0 >2:
-        print('regular number')
+    if n % c == 0:
+        print('\033[1;032m', end=' ')
+        qty =+ 1
     else:
-        print('prime number')
+        print('\033[034m', end=' ')
+    print(c, end=' ')
+print(f'\n\033[mThe number {n} is divisible {qty} times.')
+if qty == 2:
+    print('So it is a PRIME number.')
+else:
+    print('So it is a REGULAR number.')
